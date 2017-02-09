@@ -1,0 +1,30 @@
+# def longest_word(words)
+#
+# longest_length = 0
+# word_of_interest = nil
+#
+# words.each do |word|
+# if word.length > longest_length
+# longest_length = word.length
+# word_of_interest = word
+# end
+# end
+# p word_of_interest
+# end
+#
+#
+# longest_word(["cow","chicken","sheep"])
+
+
+def sing(lyrics)
+words = []
+lyrics.each do |word|
+    word[1].times do
+    words << word[0]
+  end
+  end
+  p words
+end
+
+
+sing([["row",3],["your",1],["boat",1]])
